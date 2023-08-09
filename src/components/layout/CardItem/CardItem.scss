@@ -1,18 +1,22 @@
+
 .item {
   position: relative;
   background-color: pink;
   height: 300px;
-  width: calc((100% - 60px) / 2);
-  margin-right: 30px;
+  margin-right: 0;
+  // Positioning the li element via flexbox
+  // margin-right: 30px;
+  // width: calc((100% - 60px) / 2);
   margin-bottom: 30px;
   overflow: hidden;
   transition: transform 0.3s;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
-  &:nth-child(2n) {
-    margin-right: 0px;
-  }
+// for flexbox
+  // &:nth-child(2n) {
+  //   margin-right: 0px;
+  // }
 
   &:nth-child(3),
   &:nth-child(4) {

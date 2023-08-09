@@ -1,13 +1,21 @@
-
-.list-wrapper{
-    width: 800px;
-    margin: 0 auto;
+.list-wrapper {
+  width: 800px;
+  margin: 0 auto;
 }
+//Positioning via flexbox
 
-.list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    
+// .list{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     list-style: none;
+
+// }
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, calc((100% - 60px) / 2));
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
 }
