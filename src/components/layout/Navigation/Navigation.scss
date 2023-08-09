@@ -1,0 +1,38 @@
+.navigation {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 60px;
+  &:last-child{
+    margin-right: 0px;
+}
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #8f8989;
+  }
+}
+
+/* Animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
